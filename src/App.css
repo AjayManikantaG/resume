@@ -4,6 +4,7 @@
   top: 0;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   z-index: 20;
+  background-color: white;
 }
 
 .header .header-container {
@@ -210,9 +211,31 @@
   background: #fff;
 }
 
-.main-container {
+.main .main-container {
   max-width: 1440px;
 }
+
+.main .main-container .main-header-section {
+  margin-bottom: 8rem;
+  position: relative;
+  display: grid;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .main-container .main-header-section .main-header-blobs {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  transform: translate(-50%, 0);
+  overflow: visible;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Home Page Styling --End-- */
 
 /* Footer Styling  */
