@@ -2,22 +2,31 @@ import { useEffect, useRef } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import Typed from 'typed.js';
+import { RiHeartPulseFill } from 'react-icons/ri';
 
 const HomePage = () => {
   const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['Handy', 'Mandy', 'Candy', 'More Strings'], // Strings to display
+      strings: [
+        'Creating Web Experiences',
+        'Building server-side apps',
+        'Designing and managing DB',
+        'Architecting AWS Serverless',
+        'Utilizing GIT',
+        'Planning, coordinating projects',
+      ], // Strings to display
       // Speed settings, try diffrent values until you get good results
       startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 5000,
+      typeSpeed: 150,
+      backSpeed: 50,
+      backDelay: 2000,
       loop: true,
+      showCursor: false,
     });
 
-    // Destropying
+    // Destroying
     return () => {
       typed.destroy();
     };
@@ -26,7 +35,7 @@ const HomePage = () => {
   return (
     <main className='main'>
       <div className='main-container'>
-        <section className='main-header-section'>
+        <section className='main-header-section fadeInUp'>
           <div className='main-header-blobs'>
             <svg
               className='cl-ak shape cl_af'
@@ -61,7 +70,27 @@ const HomePage = () => {
             </svg>
           </div>
 
-          <div ref={el} className='dummy'></div>
+          <div className='main-header-section--left'>
+            <img src='./programmer_working.svg' alt='Programmer Working' />
+          </div>
+          <div className='main-header-section--right'>
+            <p className='greeting'>Hello! My Name is</p>
+            <h1 className='main-header-myname'>Ajay Manikanta</h1>
+            <p className='titles-header'>
+              I <RiHeartPulseFill />
+            </p>
+            <div className='titles'>
+              <span ref={el}></span> &nbsp;
+            </div>
+            <a
+              className='main-header-contactme'
+              href='mailto:ajay.vijay1123@gmail.com?subject=Reaching%20out%20to%20you%20&body=Hi%20Ajay,%20Can%20we%20connect%20'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              CONNECT
+            </a>
+          </div>
         </section>
       </div>
     </main>
