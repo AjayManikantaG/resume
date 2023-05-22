@@ -88,7 +88,7 @@ const HomePage = () => {
               rel='noopener noreferrer'
               target='_blank'
             >
-              CONNECT
+              Contact Me
             </a>
           </div>
         </section>

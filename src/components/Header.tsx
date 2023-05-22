@@ -12,7 +12,10 @@ const Header = () => {
     <header className='header fadeInDown'>
       <div className='header-container'>
         <div className='header-container--left'>
-          <img tabIndex={0} src='./AJ-logo__Lines.svg' alt='AJ Logo' />
+          <a href='/'>
+            <img tabIndex={0} src='./AJ-logo__Lines.svg' alt='AJ Logo' />
+            <img tabIndex={0} src='./Ajay_coding.gif' alt='AJ Logo' />
+          </a>
           {/* <p>AJAY MANIKANTA</p> */}
         </div>
         <div className='header-container--right'>

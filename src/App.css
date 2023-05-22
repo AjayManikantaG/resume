@@ -3,6 +3,7 @@
   --black: #000;
   --purplish: #6c63ff;
   --bluish: #3e34ff;
+  --greenish: #08fa94;
 }
 
 /* Header Styling --Start-- */
@@ -20,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
 }
 
 .header .header-container .header-container--left {
@@ -30,7 +31,29 @@
 
 .header .header-container .header-container--left img {
   width: 3rem;
-  margin-right: 1rem;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .header-container .header-container--left img:last-child {
+  display: none;
+  width: 3rem;
+  height: auto;
+  text-align: center;
+}
+
+.header .header-container .header-container--left a {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.header .header-container .header-container--left a:hover img:first-child {
+  display: none;
+}
+
+.header .header-container .header-container--left a:hover img:last-child {
+  display: block;
 }
 
 /* .header .header-container .header-container--left p {
@@ -115,6 +138,10 @@
 @media screen and (max-width: 768px) {
   .header .header-container .header-container--right .header-navigation {
     display: none;
+  }
+
+  .header .header-container {
+    padding: 1rem 1rem;
   }
 
   .header .header-container .header-resume-container {
@@ -341,8 +368,8 @@
   .main-header-contactme {
   display: inline-block;
   margin-top: 1.5rem;
-  padding: 1rem 2rem;
-  font-size: 1rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.2rem;
   background-color: var(--purplish);
   border-radius: 5px;
   color: white;
@@ -476,10 +503,10 @@
     .main-header-section
     .main-header-blobs
     svg:first-child {
-    width: 276;
+    width: 268;
   }
   .main .main-container .main-header-section .main-header-blobs svg:last-child {
-    width: 276px;
+    width: 260px;
     left: 12%;
   }
 }
@@ -537,6 +564,107 @@
   text-shadow: 0 0 10px rgba(33, 156, 243, 0.5),
     0 0 20px rgba(33, 156, 243, 0.5), 0 0 30px rgba(33, 156, 243, 0.5),
     inset 0 0 10px rgba(33, 156, 243, 1);
+}
+
+/*  CLOCK  */
+.clock {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  width: 12rem;
+  height: 12rem;
+  justify-self: center;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.5rem var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.clock .hand {
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 6rem;
+  border-radius: 0.2rem;
+  z-index: 200;
+}
+.clock .hours {
+  width: 0.4rem;
+  height: 3.2rem;
+  background: var(--greyLight-3);
+}
+.clock .minutes {
+  width: 0.4rem;
+  height: 4.6rem;
+  background: var(--greyDark);
+}
+.clock .seconds {
+  width: 0.2rem;
+  height: 5.2rem;
+  background: var(--primary);
+}
+.clock .point {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--primary);
+  z-index: 300;
+}
+.clock .marker {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+    inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+.clock .marker::after {
+  content: '';
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  box-shadow: inset 1px 1px 1px var(--greyLight-2),
+    inset -1px -1px 1px var(--white);
+  border-radius: 50%;
+  top: 20%;
+  left: 20%;
+  filter: blur(1px);
+}
+.clock .marker__1,
+.clock .marker__2,
+.clock .marker__3,
+.clock .marker__4 {
+  position: absolute;
+  border-radius: 0.1rem;
+  box-shadow: inset 1px 1px 1px var(--greyLight-2),
+    inset -1px -1px 1px var(--white);
+}
+.clock .marker__1,
+.clock .marker__2 {
+  width: 0.2rem;
+  height: 0.6rem;
+  left: 5.6rem;
+}
+.clock .marker__3,
+.clock .marker__4 {
+  width: 0.6rem;
+  height: 0.2rem;
+  top: 5.6rem;
+}
+.clock .marker__1 {
+  top: 2%;
+}
+.clock .marker__2 {
+  top: 98%;
+  transform: translateY(-0.6rem);
+}
+.clock .marker__3 {
+  left: 2%;
+}
+.clock .marker__4 {
+  left: 98%;
+  transform: translateX(-0.6rem);
 }
 
 @media screen and (max-width: 768px) {
@@ -674,7 +802,7 @@
     /* transform: skew(10deg); */
   }
   50% {
-    transform: scale(1.15);
+    transform: scale(1.12);
     /* transform: perspective(0px); */
     transform: rotate(360);
     /* transform: skew(20deg); */
