@@ -21,7 +21,9 @@ const Header = () => {
         <div className='header-container--right'>
           <nav className='header-navigation'>
             <ul>
-              <li tabIndex={0}>About</li>
+              <li tabIndex={0}>
+                <a href='#aboutme'>About</a>
+              </li>
               <li tabIndex={0}>Experience</li>
               <li tabIndex={0}>Work</li>
               <li tabIndex={0}>Contact</li>
@@ -55,25 +57,25 @@ const Header = () => {
                     tabIndex={0}
                     onClick={() => setIsHamburgerActive(!isHamburgerActive)}
                   >
-                    About
+                    <a href='#aboutme'>About</a>
                   </li>
                   <li
                     tabIndex={0}
                     onClick={() => setIsHamburgerActive(!isHamburgerActive)}
                   >
-                    Experience
+                    <a>Experience</a>
                   </li>
                   <li
                     tabIndex={0}
                     onClick={() => setIsHamburgerActive(!isHamburgerActive)}
                   >
-                    Work
+                    <a>Work</a>
                   </li>
                   <li
                     tabIndex={0}
                     onClick={() => setIsHamburgerActive(!isHamburgerActive)}
                   >
-                    Contact
+                    <a>Contact</a>
                   </li>
                 </ul>
                 <div>

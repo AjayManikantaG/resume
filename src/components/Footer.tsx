@@ -59,7 +59,7 @@ const Footer = () => {
           <ul>
             <li>
               <a href='https://github.com/AjayManikantaG' target='_blank'>
-                <FaGithub size={28} />
+                <FaGithub size={22} />
               </a>
             </li>
             <li>
@@ -67,12 +67,12 @@ const Footer = () => {
                 href='https://www.linkedin.com/in/ajay-manikanta-17b731110/'
                 target='_blank'
               >
-                <FaLinkedinIn size={28} />
+                <FaLinkedinIn size={22} />
               </a>
             </li>
             <li>
               <a href='https://codepen.io/ajay_krishna' target='_blank'>
-                <FaCodepen size={28} />
+                <FaCodepen size={22} />
               </a>
             </li>
             <li>
@@ -80,7 +80,7 @@ const Footer = () => {
                 href='https://codesandbox.io/u/ajaykrishna1123'
                 target='_blank'
               >
-                <SiCodesandbox size={28} />
+                <SiCodesandbox size={22} />
               </a>
             </li>
           </ul>

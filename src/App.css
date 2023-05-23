@@ -84,6 +84,11 @@
   font-size: 1rem;
 }
 
+.header .header-container .header-container--right .header-navigation ul li a {
+  text-decoration: none;
+  color: black;
+}
+
 .header
   .header-container
   .header-container--right
@@ -95,8 +100,17 @@
   left: 0;
   bottom: -0.2rem;
   width: 0;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--purplish);
   transition: all 0.3s;
+}
+
+.header
+  .header-container
+  .header-container--right
+  .header-navigation
+  ul
+  li:hover {
+  color: var(--purplish);
 }
 
 .header
@@ -241,6 +255,7 @@
 /* Header Styling --End-- */
 
 /* Home Page Styling --Start-- */
+/**-- Hero Section --**/
 .main {
   background: #fff;
 }
@@ -251,9 +266,8 @@
 }
 
 .main .main-container .main-header-section {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   position: relative;
-  display: grid;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -511,6 +525,109 @@
   }
 }
 
+/**-- About Me --**/
+
+.aboutme {
+  background-color: white;
+}
+
+.aboutme .aboutme-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 8rem;
+}
+
+.aboutme .aboutme-container .aboutme-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutme .aboutme-container .aboutme-heading--container {
+  display: flex;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.aboutme .aboutme-container .aboutme-heading--container span {
+  height: 2px;
+  background-color: #0000003b;
+  width: 15rem;
+  margin-left: 3rem;
+  border-radius: 15px;
+}
+
+.aboutme .aboutme-container .aboutme-section--content {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.aboutme .aboutme-container .aboutme-section--content .aboutme-section--left {
+  max-width: 50%;
+  margin-right: 4rem;
+}
+
+.aboutme .aboutme-container .aboutme-section--content .aboutme-section--left p {
+  margin-bottom: 0.8rem;
+}
+
+.aboutme
+  .aboutme-container
+  .aboutme-section--content
+  .aboutme-section--left
+  p
+  .highlight {
+  color: var(--purplish);
+  font-weight: 500;
+}
+
+.aboutme
+  .aboutme-container
+  .aboutme-section--content
+  .aboutme-section--right
+  img {
+  max-width: 15rem;
+  margin-top: 3rem;
+}
+
+.aboutme .aboutme-container .aboutme-section--content .aboutme-technologylist {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.aboutme
+  .aboutme-container
+  .aboutme-section--content
+  .aboutme-technologylist
+  li {
+  position: relative;
+  padding-left: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.aboutme
+  .aboutme-container
+  .aboutme-section--content
+  .aboutme-technologylist
+  li::before {
+  content: '▶';
+  position: absolute;
+  left: 0px;
+  color: var(--purplish);
+  font-size: 8px;
+  line-height: 12px;
+  font-size: 0.8rem;
+  top: 0.4rem;
+}
+
 /* Home Page Styling --End-- */
 
 /* Footer Styling  */
@@ -524,6 +641,7 @@
   justify-content: center;
   align-items: center;
   max-width: 1440px;
+  margin: 0 auto;
   padding: 2rem;
 }
 

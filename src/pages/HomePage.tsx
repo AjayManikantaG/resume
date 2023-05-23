@@ -35,6 +35,7 @@ const HomePage = () => {
   return (
     <main className='main'>
       <div className='main-container'>
+        {/* Hero Section */}
         <section className='main-header-section fadeInUp'>
           <div className='main-header-blobs'>
             <svg
@@ -90,6 +91,73 @@ const HomePage = () => {
             >
               Contact Me
             </a>
+          </div>
+        </section>
+
+        {/* About me section */}
+        <div className='swipe-through-here' id='aboutme'></div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <section className='aboutme'>
+          <div className='aboutme-container'>
+            <div className='aboutme-content-container'>
+              <div className='aboutme-section--content'>
+                <div className='aboutme-section--left'>
+                  <div className='aboutme-heading--container'>
+                    <h2 className='aboutme-heading'>About Me</h2>
+                    <span></span>
+                  </div>
+                  <p>
+                    Hola! My name is{' '}
+                    <span
+                      className='highlight'
+                      style={{
+                        cursor: "url('../assets/Ajay_image.ico'), auto",
+                      }}
+                    >
+                      Ajay
+                    </span>{' '}
+                    and I have a strong affinity for crafting web experiences.
+                    My fascination with web development ignited in 2017 when I
+                    ventured into the realm of customizing website in{' '}
+                    <span className='highlight'>Chubb</span>. Little did I know
+                    that my endeavor to create a personalized portfolio would
+                    lead me to acquire extensive knowledge in{' '}
+                    <span className='highlight'>HTML, CSS & JAVASCRIPT!</span>
+                  </p>
+                  <p>
+                    Looking ahead to the present, I've been fortunate to
+                    accumulate valuable experience across diverse environments,
+                    including working at{' '}
+                    <span className='highlight'>Microsoft</span>. Currently, my
+                    primary dedication lies in the development of accessible and
+                    inclusive products, as well as digital experiences, at{' '}
+                    <span className='highlight'>Tech Mahindra</span>. I
+                    collaborate with a wide array of clients to bring their
+                    visions to life.
+                  </p>
+                  <p>
+                    These are some of the technologies I've been actively
+                    engaged with in recent times :
+                  </p>
+                  <ul className='aboutme-technologylist'>
+                    <li>HTML & CSS</li>
+                    <li>Javascript</li>
+                    <li>Typescript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>AWS</li>
+                    <li>Jenkins</li>
+                    <li>D365 Commerce</li>
+                  </ul>
+                </div>
+                <div className='aboutme-section--right'>
+                  <img src='./Ajay_Suit_Nobg.png' alt='' />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
