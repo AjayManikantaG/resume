@@ -521,7 +521,8 @@
   }
   .main .main-container .main-header-section .main-header-blobs svg:last-child {
     width: 260px;
-    left: 12%;
+    left: -12%;
+    overflow: hidden;
   }
 }
 
@@ -645,16 +646,16 @@
   }
 
   .aboutme .aboutme-container .aboutme-section--content .aboutme-section--left {
-    max-width: 100%;
+    max-width: 100vw;
     margin-right: 0;
-    padding: 2rem;
+    padding: 1.2rem;
   }
 
   .aboutme
     .aboutme-container
     .aboutme-section--content
     .aboutme-section--right {
-    max-width: 100%;
+    max-width: 100vw;
     height: 35rem;
     width: 100%;
   }
@@ -664,7 +665,7 @@
   }
 
   .aboutme .aboutme-container .aboutme-heading--container span {
-    width: 8rem;
+    width: 30%;
     margin-left: 1rem;
   }
 }
