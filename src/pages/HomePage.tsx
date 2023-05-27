@@ -119,9 +119,11 @@ const HomePage = () => {
                     >
                       Ajay
                     </span>{' '}
-                    and I have a strong affinity for crafting web experiences.
-                    My fascination with web development ignited in 2017 when I
-                    ventured into the realm of customizing website in{' '}
+                    and I am based out of{' '}
+                    <span className='highlight'>BANGALORE</span>. I have a
+                    strong affinity for crafting web experiences. My fascination
+                    with web development ignited in 2017 when I ventured into
+                    the realm of customizing website in{' '}
                     <span className='highlight'>Chubb</span>. Little did I know
                     that my endeavor to create a personalized portfolio would
                     lead me to acquire extensive knowledge in{' '}
@@ -154,12 +156,16 @@ const HomePage = () => {
                   </ul>
                 </div>
                 <div className='aboutme-section--right'>
-                  <img src='./Ajay_Suit_Nobg.png' alt='' />
+                  <div>
+                    <img src='./Ajay_inSuit.png' alt='' />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        {/* Contact Me */}
       </div>
     </main>
   );

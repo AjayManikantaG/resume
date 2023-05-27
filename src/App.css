@@ -149,7 +149,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .header .header-container .header-container--right .header-navigation {
     display: none;
   }
@@ -584,13 +584,24 @@
   font-weight: 500;
 }
 
+.aboutme .aboutme-container .aboutme-section--content .aboutme-section--right {
+  background: var(--purplish) url('./assets/Bangalore_Map.png') center;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+}
 .aboutme
   .aboutme-container
   .aboutme-section--content
   .aboutme-section--right
   img {
   max-width: 15rem;
-  margin-top: 3rem;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 10px solid #6c63ff;
 }
 
 .aboutme .aboutme-container .aboutme-section--content .aboutme-technologylist {
@@ -626,6 +637,36 @@
   line-height: 12px;
   font-size: 0.8rem;
   top: 0.4rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 968px) {
+  .aboutme-section--content {
+    flex-direction: column;
+  }
+
+  .aboutme .aboutme-container .aboutme-section--content .aboutme-section--left {
+    max-width: 100%;
+    margin-right: 0;
+    padding: 2rem;
+  }
+
+  .aboutme
+    .aboutme-container
+    .aboutme-section--content
+    .aboutme-section--right {
+    max-width: 100%;
+    height: 35rem;
+    width: 100%;
+  }
+
+  .aboutme .aboutme-section--left .aboutme-heading {
+    font-size: 1.4rem;
+  }
+
+  .aboutme .aboutme-container .aboutme-heading--container span {
+    width: 8rem;
+    margin-left: 1rem;
+  }
 }
 
 /* Home Page Styling --End-- */
