@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 // @ts-ignore
 import Typed from 'typed.js';
 import { RiHeartPulseFill } from 'react-icons/ri';
+import { TfiWrite } from 'react-icons/tfi';
 
 const HomePage = () => {
   const el = useRef(null);
@@ -85,11 +86,10 @@ const HomePage = () => {
             </div>
             <a
               className='main-header-contactme'
-              href='mailto:ajay.vijay1123@gmail.com?subject=Reaching%20out%20to%20you%20&body=Hi%20Ajay,%20Can%20we%20connect%20'
-              rel='noopener noreferrer'
               target='_blank'
+              href='./Resume.pdf'
             >
-              Contact Me
+              RESUME&nbsp; <TfiWrite />
             </a>
           </div>
         </section>
@@ -166,6 +166,14 @@ const HomePage = () => {
         </section>
 
         {/* Contact Me */}
+        {/* <a
+              className='main-header-contactme'
+              href='mailto:ajay.vijay1123@gmail.com?subject=Reaching%20out%20to%20you%20&body=Hi%20Ajay,%20Can%20we%20connect%20'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              Contact Me
+            </a> */}
       </div>
     </main>
   );

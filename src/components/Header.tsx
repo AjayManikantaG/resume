@@ -29,7 +29,7 @@ const Header = () => {
               <li tabIndex={0}>Contact</li>
             </ul>
           </nav>
-          <div className='header-resume-container'>
+          {/* <div className='header-resume-container'>
             <a
               target='_blank'
               href='./Resume.pdf'
@@ -37,7 +37,7 @@ const Header = () => {
             >
               RESUME
             </a>
-          </div>
+          </div> */}
           <div className='header-mobile-navigation'>
             <div
               className={`menu-btn ${isHamburgerActive ? 'active' : ''}`}
@@ -78,7 +78,7 @@ const Header = () => {
                     <a>Contact</a>
                   </li>
                 </ul>
-                <div>
+                {/* <div>
                   <a
                     target='_blank'
                     href='./Resume.pdf'
@@ -87,7 +87,7 @@ const Header = () => {
                   >
                     RESUME
                   </a>
-                </div>
+                </div> */}
               </nav>
             )}
           </div>

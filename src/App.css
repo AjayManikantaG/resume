@@ -399,6 +399,15 @@
   .main-container
   .main-header-section
   .main-header-section--right
+  .main-header-contactme
+  svg {
+  margin-bottom: -0.15rem;
+}
+
+.main
+  .main-container
+  .main-header-section
+  .main-header-section--right
   .main-header-contactme:hover {
   background-color: var(--bluish);
   color: #fff;
