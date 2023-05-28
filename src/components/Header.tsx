@@ -14,7 +14,7 @@ const Header = () => {
         <div className='header-container--left'>
           <a href='/resume/'>
             <img tabIndex={0} src='./AJ-logo__Lines.svg' alt='AJ Logo' />
-            <img tabIndex={0} src='./Ajay_coding.gif' alt='AJ Logo' />
+            <img tabIndex={0} src='./Coding_guy.gif' alt='AJ Logo' />
           </a>
           {/* <p>AJAY MANIKANTA</p> */}
         </div>
@@ -24,9 +24,15 @@ const Header = () => {
               <li tabIndex={0}>
                 <a href='#aboutme'>About</a>
               </li>
-              <li tabIndex={0}>Experience</li>
-              <li tabIndex={0}>Work</li>
-              <li tabIndex={0}>Contact</li>
+              <li tabIndex={0}>
+                <a href='#aboutme'>Work</a>
+              </li>
+              <li tabIndex={0}>
+                <a href='#aboutme'>Let's Play</a>
+              </li>
+              <li tabIndex={0}>
+                <a href='#aboutme'>Contact</a>
+              </li>
             </ul>
           </nav>
           {/* <div className='header-resume-container'>
@@ -63,13 +69,13 @@ const Header = () => {
                     tabIndex={0}
                     onClick={() => setIsHamburgerActive(!isHamburgerActive)}
                   >
-                    <a>Experience</a>
+                    <a>Work</a>
                   </li>
                   <li
                     tabIndex={0}
                     onClick={() => setIsHamburgerActive(!isHamburgerActive)}
                   >
-                    <a>Work</a>
+                    <a>Let's Play</a>
                   </li>
                   <li
                     tabIndex={0}

@@ -573,6 +573,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .aboutme .aboutme-container .aboutme-section--content .aboutme-section--left {
@@ -602,7 +603,25 @@
   display: flex;
   justify-content: center;
   max-width: 50%;
+  border-radius: 2%;
 }
+
+.aboutme
+  .aboutme-container
+  .aboutme-section--content
+  .aboutme-section--right
+  img {
+  transition: all 0.3s;
+}
+
+.aboutme
+  .aboutme-container
+  .aboutme-section--content
+  .aboutme-section--right
+  img:hover {
+  transform: scale(1.1);
+}
+
 .aboutme
   .aboutme-container
   .aboutme-section--content

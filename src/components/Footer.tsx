@@ -85,7 +85,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <p>Copyright © 2023 Ajay Manikanta. All rights reserved</p>
+        <p style={{ textAlign: 'center' }}>
+          Copyright © 2023. Designed and Built by Ajay
+        </p>
       </div>
     </footer>
   );

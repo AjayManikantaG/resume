@@ -1,9 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import Typed from 'typed.js';
 import { RiHeartPulseFill } from 'react-icons/ri';
 import { TfiWrite } from 'react-icons/tfi';
+import { explode } from '../utilities/explode';
 
 const HomePage = () => {
   const el = useRef(null);
@@ -26,6 +30,14 @@ const HomePage = () => {
       loop: true,
       showCursor: false,
     });
+
+    document
+      ?.querySelector('.aboutme-section-photo')
+      ?.addEventListener('mouseover', (e: any) => explode(e.pageX, e.pageY));
+
+    document
+      ?.querySelector('.aboutme-section-photo')
+      ?.addEventListener('ontouchstart', (e: any) => explode(e.pageX, e.pageY));
 
     // Destroying
     return () => {
@@ -156,8 +168,12 @@ const HomePage = () => {
                   </ul>
                 </div>
                 <div className='aboutme-section--right'>
-                  <div>
-                    <img src='./Ajay_inSuit.png' alt='' />
+                  <div className='aboutme-section-photo-container'>
+                    <img
+                      className='aboutme-section-photo'
+                      src='./Ajay_inSuit.png'
+                      alt=''
+                    />
                   </div>
                 </div>
               </div>
