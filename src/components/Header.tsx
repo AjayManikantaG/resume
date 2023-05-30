@@ -8,11 +8,15 @@ const Header = () => {
     setIsContentLoaded(true);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <header className='header fadeInDown'>
       <div className='header-container'>
         <div className='header-container--left'>
-          <a href='/resume/'>
+          <a onClick={scrollToTop}>
             <img tabIndex={0} src='./AJ-logo__Lines.svg' alt='AJ Logo' />
             <img tabIndex={0} src='./Coding_guy.gif' alt='AJ Logo' />
           </a>
@@ -25,12 +29,12 @@ const Header = () => {
                 <a href='#aboutme'>About</a>
               </li>
               <li tabIndex={0}>
-                <a href='#aboutme'>Work</a>
+                <a href='#mywork'>Work</a>
               </li>
               <li tabIndex={0}>
                 <a href='#aboutme'>Let's Play</a>
               </li>
-              <li tabIndex={0}>
+              <li tabIndex={0} style={{ marginRight: 0 }}>
                 <a href='#aboutme'>Contact</a>
               </li>
             </ul>
@@ -69,7 +73,7 @@ const Header = () => {
                     tabIndex={0}
                     onClick={() => setIsHamburgerActive(!isHamburgerActive)}
                   >
-                    <a>Work</a>
+                    <a href='#mywork'>Work</a>
                   </li>
                   <li
                     tabIndex={0}
