@@ -31,11 +31,11 @@ const Header = () => {
               <li tabIndex={0}>
                 <a href='#mywork'>Work</a>
               </li>
-              <li tabIndex={0}>
+              {/* <li tabIndex={0}>
                 <a href='#aboutme'>Let's Play</a>
-              </li>
+              </li> */}
               <li tabIndex={0} style={{ marginRight: 0 }}>
-                <a href='#aboutme'>Contact</a>
+                <a href='#contactme'>Contact</a>
               </li>
             </ul>
           </nav>
@@ -75,17 +75,17 @@ const Header = () => {
                   >
                     <a href='#mywork'>Work</a>
                   </li>
-                  <li
+                  {/* <li
                     tabIndex={0}
                     onClick={() => setIsHamburgerActive(!isHamburgerActive)}
                   >
                     <a>Let's Play</a>
-                  </li>
+                  </li> */}
                   <li
                     tabIndex={0}
                     onClick={() => setIsHamburgerActive(!isHamburgerActive)}
                   >
-                    <a>Contact</a>
+                    <a href='#contactme'>Contact</a>
                   </li>
                 </ul>
                 {/* <div>

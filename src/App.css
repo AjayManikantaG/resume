@@ -545,7 +545,7 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 0;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .aboutme .aboutme-container .aboutme-content-container {
@@ -696,6 +696,117 @@
     width: 30%;
     margin-left: 1rem;
   }
+}
+
+/* MyWork Styling  */
+.mywork {
+  background-color: white;
+}
+
+.mywork .mywork-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 0;
+  padding: 0 3.6rem;
+}
+
+.mywork .mywork-header-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.mywork .mywork-content-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.mywork .mywork-content-container .mywork-content-cognizant {
+  display: flex;
+}
+
+.mywork .mywork-content-container .mywork-content-company {
+  margin-bottom: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mywork .mywork-content-container img {
+  width: 10rem;
+  margin-right: 2rem;
+}
+
+.mywork .mywork-content-infosys {
+  flex-direction: row-reverse;
+}
+.mywork .mywork-content-infosys img {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+/* .mywork .mywork-header-container h2 {
+  font-size: 1.5rem;
+} */
+
+.mywork .mywork-header-container span {
+  height: 2px;
+  background-color: #0000003b;
+  width: 15rem;
+  margin-left: 3rem;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 698px) {
+  .mywork .mywork-header-container h2 {
+    font-size: 22.4px;
+  }
+
+  .mywork .mywork-content-container .mywork-content-company {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+
+  .mywork .mywork-content-container img {
+    height: 3rem;
+    width: auto;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .mywork .mywork-header-container span {
+    width: 30%;
+    margin-left: 1rem;
+  }
+}
+
+/* Contact me */
+.contactme {
+  background-color: white;
+}
+
+.contactme .contactme-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  padding: 0 3.6rem;
+}
+
+.contactme .contactme-heading-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.contactme .contactme-heading-container span {
+  height: 2px;
+  background-color: #0000003b;
+  width: 15rem;
+  margin-left: 3rem;
+  border-radius: 15px;
 }
 
 /* Home Page Styling --End-- */

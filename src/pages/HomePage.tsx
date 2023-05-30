@@ -7,7 +7,7 @@ import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { RiHeartPulseFill } from 'react-icons/ri';
 import { TfiWrite } from 'react-icons/tfi';
-import { explode } from '../utilities/explode';
+import explode from '../utilities/explode';
 
 const HomePage = () => {
   const el = useRef(null);
@@ -181,9 +181,114 @@ const HomePage = () => {
           </div>
         </section>
 
+        {/* myWork */}
+        <div className='swipe-through-here' id='mywork'></div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <section className='mywork'>
+          <div className='mywork-container'>
+            <div className='mywork-header-container'>
+              <h2 className='mywork-heading'>My Journey</h2>
+              <span></span>
+            </div>
+            <div className='mywork-content-container'>
+              <div className='mywork-content-cognizant mywork-content-company'>
+                <div className='mywork-content-cognizant--left'>
+                  <img src='./Cognizant_Logo.png' alt='Cognizant' />
+                </div>
+                <div className='mywork-content-cognizant--right'>
+                  <h3
+                    style={{
+                      color: '#343434',
+                      fontSize: '18px',
+                      fontWeight: '600',
+                    }}
+                  >
+                    Cognizant (2017 - 2020)
+                  </h3>
+                  <p>
+                    Developed and maintained code for in-house and client
+                    websites primarily using technologies like DB2, HTML, CSS,
+                    Javascript, React, NodeJS. Worked across various projects
+                    and learnt the development patterns. Deliver precise
+                    documentation for the development process.
+                  </p>
+                </div>
+              </div>
+              <div className='mywork-content-infosys mywork-content-company'>
+                <div className='mywork-content-infosys--left'>
+                  <img src='./Infosys_Logo.png' alt='Infosys' />
+                </div>
+                <div className='mywork-content-infosys--right'>
+                  <h3
+                    style={{
+                      color: '#343434',
+                      fontSize: '18px',
+                      fontWeight: '600',
+                    }}
+                  >
+                    Infosys (2020 - 2021)
+                  </h3>
+                  <p>
+                    Work on AWS cloud to deliver performant microservices using
+                    AWS Lambda, DynamoDB, Cloud Formation, Serverless, NodeJS.
+                    Write UI using ReactJS, JSX, CSS. Deploy the builds using
+                    JFrog and Jenkins. Worked on designing entire architecture
+                    of the serverless app.
+                  </p>
+                </div>
+              </div>
+              <div className='mywork-content-techm mywork-content-company'>
+                <div className='mywork-content-techm--left'>
+                  <img src='./Tech_Mahindra_Logo.png' alt='TechM' />
+                </div>
+                <div className='mywork-content-techm--right'>
+                  <h3
+                    style={{
+                      color: '#343434',
+                      fontSize: '18px',
+                      fontWeight: '600',
+                    }}
+                  >
+                    Tech Mahindra (2021 - Present)
+                  </h3>
+                  <p>
+                    Write modern, performant, maintainable code for diverse
+                    array of clients and internal projects. Work with a variety
+                    of different languages, platforms, frameworks, content
+                    management systems like ReactJS, HTML, CSS, D365 Ecomm,
+                    Typescript, NodeJS, Javascript. Communicate with
+                    multi-disciplinary teams of engineers, designer and clients
+                    on daily basis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Me */}
+        <div className='swipe-through-here' id='contactme'></div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <section className='contactme'>
+          <div className='contactme-container'>
+            <div className='contactme-heading-container'>
+              <h2 className='contactme-heading'>Contact Me</h2>
+              <span></span>
+            </div>
+            <div className='contactme-content-container'>
+              <div className='contactme-content--left'></div>
+              <div className='contactme-content--right'></div>
+            </div>
+          </div>
+        </section>
         {/* <a
-              className='main-header-contactme'
+              className='contactme-mail-btn'
               href='mailto:ajay.vijay1123@gmail.com?subject=Reaching%20out%20to%20you%20&body=Hi%20Ajay,%20Can%20we%20connect%20'
               rel='noopener noreferrer'
               target='_blank'
