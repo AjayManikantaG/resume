@@ -5,7 +5,7 @@
 const colors = ['#3e34ff', '#000', '#08fa94'];
 const bubbles = 25;
 
-export const explode = (x: any, y: any) => {
+const explode = (x: any, y: any) => {
   const particles: any = [];
   const ratio: any = window.devicePixelRatio;
   const c: any = document.createElement('canvas');
@@ -73,3 +73,5 @@ const r = (a: any, b: any, c?: any) =>
       c ? c : 0
     )
   );
+
+export default explode;
