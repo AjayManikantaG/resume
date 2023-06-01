@@ -6,6 +6,10 @@
   --greenish: #08fa94;
 }
 
+.swipe-through-here {
+  scroll-snap-align: start;
+}
+
 /* Header Styling --Start-- */
 .header {
   position: sticky;
@@ -792,7 +796,7 @@
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 4rem;
-  padding: 0 3.6rem;
+  padding: 0 3.8rem;
 }
 
 .contactme .contactme-heading-container {
@@ -807,6 +811,28 @@
   width: 15rem;
   margin-left: 3rem;
   border-radius: 15px;
+}
+
+.contactme .contactme-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactme .contactme-content-container .contactme-content--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 200px) and (max-width: 698px) {
+  .contactme .contactme-heading-container h2 {
+    font-size: 22.4px;
+  }
+
+  .contactme .contactme-heading-container span {
+    width: 30%;
+    margin-left: 1rem;
+  }
 }
 
 /* Home Page Styling --End-- */

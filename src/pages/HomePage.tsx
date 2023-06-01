@@ -7,6 +7,8 @@ import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { RiHeartPulseFill } from 'react-icons/ri';
 import { TfiWrite } from 'react-icons/tfi';
+import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
 import explode from '../utilities/explode';
 
 const HomePage = () => {
@@ -282,8 +284,38 @@ const HomePage = () => {
               <span></span>
             </div>
             <div className='contactme-content-container'>
-              <div className='contactme-content--left'></div>
-              <div className='contactme-content--right'></div>
+              <div className='contactme-content--left'>
+                {/* <h3>Send me a message</h3> */}
+                <p>Please feel free to contact me for any help</p>
+                <form className='contactme-form'>
+                  <input type='text' placeholder='Enter Your Name' />
+                  <input type='text' placeholder='Enter Your Email' />
+                  <input type='text' placeholder='Enter Your Message' />
+                  <div className='contactme-form-btn-container'>
+                    <button type='submit'>SEND NOW</button>
+                    <button>SEND EMAIL</button>
+                  </div>
+                </form>
+              </div>
+              <div className='contactme-content--right'>
+                <div className='contactme-details-container'>
+                  <div className='contactme-details--address contactme-details--icons'>
+                    <FaMapMarkerAlt />
+                    <h3>Address</h3>
+                    <p>Yelachenahalli, Bangalore</p>
+                  </div>
+                  <div className='contactme-details--phone contactme-details--icons'>
+                    <FaPhoneAlt />
+                    <h3>Phone</h3>
+                    <p>+91 7981263843</p>
+                  </div>
+                  <div className='contactme-details--email contactme-details--icons'>
+                    <HiMail />
+                    <h3>Email</h3>
+                    <p>ajay.vijay1123@gmail.com</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
