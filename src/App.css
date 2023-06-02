@@ -711,7 +711,7 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 0;
-  padding: 0 2rem;
+  padding: 0 3.8rem;
 }
 
 .mywork .mywork-header-container {
@@ -766,11 +766,19 @@
   .mywork .mywork-header-container h2 {
     font-size: 22.4px;
   }
+
+  .mywork .mywork-container {
+    padding: 0 2rem;
+  }
 }
 
 @media screen and (min-width: 200px) and (max-width: 698px) {
   .mywork .mywork-header-container h2 {
     font-size: 22.4px;
+  }
+
+  .mywork .mywork-container {
+    padding: 0 2rem;
   }
 
   .mywork .mywork-content-container .mywork-content-company {
@@ -802,7 +810,7 @@
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 8rem;
-  padding: 0 2rem;
+  padding: 0 3.8rem;
 }
 
 .contactme .contactme-heading-container {
@@ -921,6 +929,10 @@ textarea {
 @media screen and (min-width: 200px) and (max-width: 990px) {
   .contactme .contactme-heading-container h2 {
     font-size: 22.4px;
+  }
+
+  .contactme .contactme-container {
+    padding: 0 2rem;
   }
 
   .contactme .contactme-heading-container span {
