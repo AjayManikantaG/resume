@@ -476,7 +476,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .main .main-container .main-header-section .main-header-section--left {
     display: none;
   }
@@ -680,7 +680,7 @@
   .aboutme .aboutme-container .aboutme-section--content .aboutme-section--left {
     max-width: 100vw;
     margin-right: 0;
-    padding: 1.2rem;
+    padding: 0rem;
   }
 
   .aboutme
@@ -711,7 +711,7 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 0;
-  padding: 0 3.6rem;
+  padding: 0 2rem;
 }
 
 .mywork .mywork-header-container {
@@ -762,6 +762,12 @@
   border-radius: 15px;
 }
 
+@media screen and (min-width: 698px) and (max-width: 980px) {
+  .mywork .mywork-header-container h2 {
+    font-size: 22.4px;
+  }
+}
+
 @media screen and (min-width: 200px) and (max-width: 698px) {
   .mywork .mywork-header-container h2 {
     font-size: 22.4px;
@@ -795,8 +801,8 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 0;
-  margin-bottom: 4rem;
-  padding: 0 3.8rem;
+  margin-bottom: 8rem;
+  padding: 0 2rem;
 }
 
 .contactme .contactme-heading-container {
@@ -815,16 +821,104 @@
 
 .contactme .contactme-content-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .contactme .contactme-content-container .contactme-content--right {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 10rem;
+  margin-top: -1.5rem;
 }
 
-@media screen and (min-width: 200px) and (max-width: 698px) {
+.contactme .contactme-form .contactme-form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactme .contactme-form .contactme-form-inputs input,
+textarea {
+  width: 40rem;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem;
+  background-color: rgb(107, 99, 255, 0.2);
+  border: none;
+}
+
+.contactme .contactme-form .contactme-form-btn-container {
+  display: flex;
+  margin-top: 1.2rem;
+}
+
+.contactme textarea {
+  resize: none;
+}
+
+.contactme .contactme-form .contactme-form-btn-container button,
+.contactme .contactme-form .contactme-form-btn-container a {
+  padding: 0.5rem 1rem;
+  margin-right: 0.8rem;
+  background-color: var(--purplish);
+  color: white;
+  transition: all 0.3s;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contactme .contactme-form .contactme-form-btn-container button:hover,
+.contactme .contactme-form .contactme-form-btn-container a:hover {
+  transform: translateY(-2px) scale(1.02);
+  background-color: var(--bluish);
+}
+
+.contactme .contactme-content--right .contactme-details-container {
+  display: flex;
+  /* margin-top: 3rem; */
+  flex-direction: column;
+}
+
+.contactme
+  .contactme-content--right
+  .contactme-details-container
+  .contactme-details--icons:first-child {
+  margin-top: 0;
+}
+
+.contactme
+  .contactme-content--right
+  .contactme-details-container
+  .contactme-details--icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.contactme
+  .contactme-content--right
+  .contactme-details-container
+  .contactme-details--icons
+  h3 {
+  font-size: 1rem;
+}
+
+.contactme
+  .contactme-content--right
+  .contactme-details-container
+  .contactme-details--icons
+  p {
+  font-size: 0.8rem;
+}
+
+.contactme
+  .contactme-content--right
+  .contactme-details-container
+  .contactme-details--icons
+  svg {
+  color: var(--purplish);
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 990px) {
   .contactme .contactme-heading-container h2 {
     font-size: 22.4px;
   }
@@ -833,6 +927,37 @@
     width: 30%;
     margin-left: 1rem;
   }
+
+  .contactme .contactme-content-container {
+    flex-direction: column;
+  }
+
+  .contactme .contactme-form .contactme-form-inputs input,
+  textarea {
+    width: 95%;
+  }
+
+  .contactme .contactme-content-container .contactme-content--right {
+    margin-top: 2rem;
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+
+  .contactme .contactme-content--right .contactme-details-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .contactme .contactme-form-btn-container {
+    flex-wrap: wrap;
+  }
+
+  /* .contactme .contactme-details--phone {
+    margin-left: 1rem;
+  } */
 }
 
 /* Home Page Styling --End-- */
