@@ -858,6 +858,7 @@ textarea {
 
 .contactme textarea {
   resize: none;
+  height: 8rem;
 }
 
 .contactme .contactme-form .contactme-form-btn-container button,
@@ -870,6 +871,8 @@ textarea {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .contactme .contactme-form .contactme-form-btn-container button:hover,
