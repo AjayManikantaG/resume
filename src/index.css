@@ -1,11 +1,18 @@
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura'), url(./fonts/futura-font/futur.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
-    sans-serif;
+  font-family: 'Poppins', 'Futura', 'Franklin Gothic Medium', 'Arial Narrow',
+    Arial, sans-serif;
 }
 
 html {
