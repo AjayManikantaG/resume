@@ -750,6 +750,14 @@
   margin-left: 2rem;
 }
 
+.mywork .mywork-content-bosch {
+  flex-direction: row-reverse;
+}
+.mywork .mywork-content-bosch img {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
 /* .mywork .mywork-header-container h2 {
   font-size: 1.5rem;
 } */

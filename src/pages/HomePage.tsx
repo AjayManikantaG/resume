@@ -213,9 +213,8 @@ const HomePage = () => {
                       <span className='highlight'>Microsoft</span>. Currently,
                       my primary dedication lies in the development of
                       accessible and inclusive products, as well as digital
-                      experiences, at{' '}
-                      <span className='highlight'>Tech Mahindra</span>. I
-                      collaborate with a wide array of clients to bring their
+                      experiences, at <span className='highlight'>Bosch</span>.
+                      I collaborate with a wide array of clients to bring their
                       visions to life.
                     </p>
                     <p>
@@ -318,7 +317,7 @@ const HomePage = () => {
                         fontWeight: '600',
                       }}
                     >
-                      Tech Mahindra (2021 - Present)
+                      Tech Mahindra (2021 - 2023)
                     </h3>
                     <p>
                       Write modern, performant, maintainable code for diverse
@@ -328,6 +327,34 @@ const HomePage = () => {
                       Ecomm, Typescript, NodeJS, Javascript. Communicate with
                       multi-disciplinary teams of engineers, designer and
                       clients on daily basis.
+                    </p>
+                  </div>
+                </div>
+                <div className='mywork-content-bosch mywork-content-company'>
+                  <div className='mywork-content-bosch--left'>
+                    <img src='./Bosch_Logo.jpg' alt='Bosch' />
+                  </div>
+                  <div className='mywork-content-bosch--right'>
+                    <h3
+                      style={{
+                        color: '#343434',
+                        fontSize: '18px',
+                        fontWeight: '600',
+                      }}
+                    >
+                      Bosch (2023 - Present)
+                    </h3>
+                    <p>
+                      Engaged in collaborative interactions with highly skilled
+                      professionals, contributing to the development of
+                      innovative solutions within the realm of D365 ECommerce
+                      storefronts. Specializing in leveraging React and
+                      sitebuilder technologies to craft aesthetically pleasing
+                      and customized websites. Proficiently tasked with the
+                      creation of sophisticated UI components using ReactJS,
+                      JSX, and CSS. Responsible for the seamless deployment of
+                      builds through the utilization of Lifecycle Services
+                      (LCS).
                     </p>
                   </div>
                 </div>
