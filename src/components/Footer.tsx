@@ -86,7 +86,7 @@ const Footer = () => {
           </ul>
         </div>
         <p style={{ textAlign: 'center' }}>
-          Copyright © 2023. Designed and Built by Ajay
+          Copyright © 2025. Designed and Built by Ajay
         </p>
       </div>
     </footer>
